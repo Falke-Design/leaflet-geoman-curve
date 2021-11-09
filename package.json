@@ -1,0 +1,87 @@
+{
+  "name": "@geoman-io/leaflet-geoman-curve",
+  "version": "1.0.0",
+  "description": "A Leaflet-Geoman Plugin For Drawing and Editing Bézier curves in Leaflet",
+  "keywords": [
+    "leaflet",
+    "geoman",
+    "leaflet-geoman",
+    "polygon management",
+    "geometry editing",
+    "map data",
+    "map overlay",
+    "polygon",
+    "geojson",
+    "leaflet-draw",
+    "data-field-geojson",
+    "ui-leaflet-draw",
+    "bézier",
+    "curve"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/leaflet-geoman-curve.min.js",
+  "types": "dist/leaflet-geoman-curve.d.ts",
+  "devDependencies": {
+    "@babel/core": "7.14.0",
+    "@babel/preset-env": "7.14.1",
+    "@geoman-io/leaflet-geoman-free": "^2.11.3",
+    "@types/leaflet": "^1.7.0",
+    "babel-loader": "8.2.2",
+    "copy-webpack-plugin": "8.1.1",
+    "css-loader": "5.2.4",
+    "cypress": "6.9.1",
+    "eslint": "7.26.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-cypress": "2.11.3",
+    "eslint-plugin-import": "2.22.1",
+    "file-loader": "6.2.0",
+    "leaflet": "1.7.1",
+    "mini-css-extract-plugin": "1.6.0",
+    "prettier": "2.2.1",
+    "terser-webpack-plugin": "^5.1.2",
+    "url-loader": "4.1.1",
+    "webpack": "5.36.2",
+    "webpack-cli": "4.7.0"
+  },
+  "peerDependencies": {
+    "leaflet": "^1.7.1"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "./node_modules/.bin/webpack --config=webpack.dev.js",
+    "test": "./node_modules/.bin/cypress run",
+    "cypress": "./node_modules/.bin/cypress open",
+    "build": "./node_modules/.bin/webpack --config=webpack.build.js",
+    "prepare": "npm run build",
+    "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
+    "eslint": "eslint src/ --fix",
+    "prettier": "prettier --write '{src,cypress}/**/*.{js,css}'",
+    "lint": "npm run eslint && npm run prettier"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/geoman-io/leaflet-geoman-curve.git"
+  },
+  "author": {
+    "name": "Sumit Kumar",
+    "email": "sumit@geoman.io",
+    "url": "http://geoman.io/leaflet-geoman"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geoman-io/leaflet-geoman-curve/issues"
+  },
+  "homepage": "https://geoman.io/leaflet-geoman",
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
+  },
+  "dependencies": {
+    "@elfalem/leaflet-curve": "^0.9.1"
+  }
+}
