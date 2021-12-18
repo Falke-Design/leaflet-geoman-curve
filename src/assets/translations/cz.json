@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Tažením upravte křivku"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Nakreslit bezier"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Sleep om de curve aan te passen"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Teken een curve"
+  }
+}

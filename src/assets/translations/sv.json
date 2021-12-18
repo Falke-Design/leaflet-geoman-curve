@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Dra för att justera kurvan"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Rita kurvor"
+  }
+}

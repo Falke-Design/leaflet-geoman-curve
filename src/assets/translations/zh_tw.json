@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "拖動以調整曲線"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "绘制曲线"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Trascina per regolare la curva"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Disegna Curva"
+  }
+}

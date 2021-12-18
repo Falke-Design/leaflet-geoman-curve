@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Arrastra para ajustar la curva"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Dibujar curva"
+  }
+}

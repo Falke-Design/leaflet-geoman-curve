@@ -1,0 +1,10 @@
+.leaflet-pm-toolbar .leaflet-pm-icon-curve {
+  background-image: url('../assets/icons/Curve.svg');
+}
+
+.marker-icon.marker-edit-handle, .marker-icon.marker-edit-handle:focus {
+  background-color: #ff3c3cb7;
+  border: 1px solid #bb2d2d;
+  width: 10px !important;
+  height: 10px !important;
+}

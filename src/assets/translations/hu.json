@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Húzza a görbe beállításához"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Görbék rajzolása"
+  }
+}

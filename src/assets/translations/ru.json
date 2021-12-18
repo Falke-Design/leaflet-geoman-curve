@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Перетащите, чтобы настроить кривую"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Рисовать изгиб"
+  }
+}

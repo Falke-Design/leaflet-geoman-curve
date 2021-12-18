@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Eğriyi ayarlamak için sürükleyin"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Eğriler çiz"
+  }
+}

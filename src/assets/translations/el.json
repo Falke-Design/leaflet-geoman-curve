@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Σύρετε για να προσαρμόσετε την καμπύλη"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Σχεδίαση καμπύλη"
+  }
+}

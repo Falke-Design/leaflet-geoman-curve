@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Seret untuk melaraskan lengkung"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Digitasi Curve"
+  }
+}

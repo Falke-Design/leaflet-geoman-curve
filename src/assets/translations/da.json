@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Træk for at justere kurven"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Tegn bezier"
+  }
+}

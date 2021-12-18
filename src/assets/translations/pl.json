@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Przeciągnij, aby dostosować krzywą"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Narysuj krzywą"
+  }
+}

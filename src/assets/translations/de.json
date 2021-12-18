@@ -1,0 +1,8 @@
+{
+  "tooltips": {
+    "dragCurve": "Ziehen Sie, um die Kurve anzupassen"
+  },
+  "buttonTitles": {
+    "drawCurveButton": "Bezier zeichnen"
+  }
+}
