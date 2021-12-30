@@ -46,10 +46,10 @@ export function insertTranslations() {
     fa,
     ua,
     tr,
-    cz
+    cz,
   };
 
-  for(const lang in translations){
+  for (const lang in translations) {
     L.PM.Translation.addTranslation(lang, translations[lang]);
   }
 }
