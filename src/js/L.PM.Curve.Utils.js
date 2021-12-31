@@ -46,18 +46,36 @@ const Utils = {
     return [lat, lng];
   },
 
+  padBoundsByPixel: function (bounds, px) {
+    var min = bounds.min,
+      max = bounds.max,
+      heightBuffer = Math.abs(min.x - max.x) + px,
+      widthBuffer = Math.abs(min.y - max.y) + px;
+
+
+    return L.bounds(
+      L.point(min.x - heightBuffer, min.y - widthBuffer),
+      L.point(max.x + heightBuffer, max.y + widthBuffer));
+  },
+
   _calcLayerDistancesCurve(that, latlng, layer) {
-    if (!layer.getBounds().contains(latlng)) {
+    const map = that._map;
+
+    var nw = map.getBounds().getNorthWest();
+    var se = map.getBounds().getSouthEast();
+
+    var bounds = L.PM.Curve.Utils.padBoundsByPixel(L.bounds([map.latLngToLayerPoint(nw),map.latLngToLayerPoint(se)]),25);
+
+    var point = map.latLngToLayerPoint(latlng);
+    if (!bounds.contains(point)) {
       return { ...latlng };
     }
 
-    const map = that._map;
     if (that.options.snapSegment) {
       // TODO: import module
       var path = SVGPathCommander.parsePathString(
         layer._path.attributes.d.value
       );
-      var point = map.latLngToLayerPoint(latlng);
 
       var properties = SVGPathCommander.getPropertiesAtPoint(path, point);
       var clostestLatLng = map.layerPointToLatLng(properties.closest);
